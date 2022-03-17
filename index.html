@@ -11,31 +11,35 @@
 </head>
 
 <body>
-  
-  <div class="wrapper">
-    <h2 class="wrapper-title"> Конвертация валюты </h2>
-    <div class="wrapper-convert">
-      <p>Что конвертируем
-        <select id="selectFirCurrency">
-          <option value="euro">EUR</option>
-          <option value="dollar">$</option>
-          <option value="ruble">Рубль</option>
-        </select>
-      </p>
-      Конвертируемая сумма
-      <input type="text" id="currCount">
-      <p>
-        Во что конвертируем
-        <select id="selectSecCurrency">
-          <option value="euro">EUR</option>
-          <option value="dollar">$</option>
-          <option value="ruble">Рубль</option>
-        </select>
-      </p>
-      <button onclick="convertation()">Конвертровать</button>
-      <p> Итоговая сумма = <span id="resCurr"></span> </p>
+  <div class="header">
+    <div class="wrapper">
+      
+      <div class="wrapper-convert">
+        <h2 class="wrapper-title"> Конвертация валюты </h2>
+        <p>Что конвертируем
+          <select id="selectFirCurrency">
+            <option value="euro">EUR</option>
+            <option value="dollar">$</option>
+            <option value="ruble">Рубль</option>
+          </select>
+        </p>
+        Конвертируемая сумма
+        <input type="text" id="currCount">
+        <p>
+          Во что конвертируем
+          <select id="selectSecCurrency">
+            <option value="euro">EUR</option>
+            <option value="dollar">$</option>
+            <option value="ruble">Рубль</option>
+          </select>
+        </p>
+        <button onclick="convertation()">Конвертровать</button>
+        <p> Итоговая сумма = <span id="resCurr"></span> </p>
+      </div>
     </div>
   </div>
+
+
 </body>
 
 </html>

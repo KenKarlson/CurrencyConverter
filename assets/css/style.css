@@ -6,22 +6,63 @@
 body {
   margin: 0;
   padding: 0;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+  padding-top: 20px;
   background-image: url(../../assets/img/dollar.png);
 }
 
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(6, 41, 70, 0.5);
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 450px;
+  -webkit-border-radius: 8px;
+          border-radius: 8px;
+  border: 1px solid red;
+  background-color: #FFF;
+  color: #222;
+}
+
 .wrapper-title {
-  padding: 10px;
-  background-color: #F5F4Ff;
+  padding: 0 10px;
+  background-color: #FFF;
 }
 
 .wrapper-convert {
   margin-left: 20px;
   padding: 20px;
   width: 400px;
-  border: 2px solid #c0c0c0;
+  border: 2px solid #6b5fce;
   -webkit-border-radius: 10px;
           border-radius: 10px;
   background-color: #F5F4Ff;
+  z-index: 99;
 }
 
 button {

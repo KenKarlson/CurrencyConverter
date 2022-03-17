@@ -3,20 +3,42 @@
 body
   margin: 0;
   padding: 0;
-  background-image: url(../../assets/img/dollar.png)
+
+.header
+  position: relative
+  height: 100vh 
+  padding-top: 20px 
+  background-image: url(../../assets/img/dollar.png)  
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: rgba(6, 41, 70, 0.5) 
 .wrapper
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 auto
+  padding: 20px
+  max-width: 450px
+  border-radius: 8px
+  border: 1px solid red
+  background-color: #FFF
+  color: #222
   &-title
-    padding: 10px
-    background-color: #F5F4Ff
+    padding: 0 10px
+    background-color: #FFF
   &-convert
     margin-left: 20px;
     padding: 20px;
-    width: 400px;
-  
-    border: 2px solid #c0c0c0
+    width: 400px;  
+    border: 2px solid #6b5fce
     border-radius: 10px;
-
     background-color: #F5F4Ff
+    z-index: 99
 
 button
   margin: 0;
