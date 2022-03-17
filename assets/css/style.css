@@ -1,0 +1,31 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../../assets/img/dollar.png);
+}
+
+.wrapper-title {
+  padding: 10px;
+  background-color: #F5F4Ff;
+}
+
+.wrapper-convert {
+  margin-left: 20px;
+  padding: 20px;
+  width: 400px;
+  border: 2px solid #c0c0c0;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #F5F4Ff;
+}
+
+button {
+  margin: 0;
+  padding: 8px;
+}
+/*# sourceMappingURL=style.css.map */

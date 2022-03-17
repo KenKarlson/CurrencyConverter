@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./assets/js/script.js"></script>
+</head>
+
+<body>
+  
+  <div class="wrapper">
+    <h2 class="wrapper-title"> Конвертация валюты </h2>
+    <div class="wrapper-convert">
+      <p>Что конвертируем
+        <select id="selectFirCurrency">
+          <option value="euro">EUR</option>
+          <option value="dollar">$</option>
+          <option value="ruble">Рубль</option>
+        </select>
+      </p>
+      Конвертируемая сумма
+      <input type="text" id="currCount">
+      <p>
+        Во что конвертируем
+        <select id="selectSecCurrency">
+          <option value="euro">EUR</option>
+          <option value="dollar">$</option>
+          <option value="ruble">Рубль</option>
+        </select>
+      </p>
+      <button onclick="convertation()">Конвертровать</button>
+      <p> Итоговая сумма = <span id="resCurr"></span> </p>
+    </div>
+  </div>
+</body>
+
+</html>
